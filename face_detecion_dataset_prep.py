@@ -11,7 +11,7 @@ eyes_cascade = cv2.CascadeClassifier(eyes_cascade_path)
 smile_cascade_path = cv2.data.haarcascades + "haarcascade_smile.xml"
 smile_cascade = cv2.CascadeClassifier(smile_cascade_path)
 
-dataset_path = r"D:\\projects1\\face_attendance_system\datasets\\vishwa"
+dataset_path = r"create a dataset folder and copy the path"
 
 if not os.path.exists(dataset_path):
     os.makedirs(dataset_path)
