@@ -6,7 +6,7 @@ import os
 face_cascade_path = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 detector = cv2.CascadeClassifier(face_cascade_path)
 
-path = r"D:\\projects1\\face_attendance_system\\datasets\\vishwa"
+path = r"copy datasets path"
 recognizer = cv2.face.LBPHFaceRecognizer_create()   
 
 def getImagesAndLabels(path):
@@ -27,7 +27,7 @@ print("Training Faces. It will take a few seconds")
 faces, ids = getImagesAndLabels(path)
 recognizer.train(faces, np.array(ids))  
 
-trainer_path = r'D:\\projects1\\face_attendance_system\\datasets\\vishwa\\trainer\\trainer.yml'
+trainer_path = r'copy trainer yml path'
 os.makedirs(os.path.dirname(trainer_path), exist_ok=True)
 recognizer.write(trainer_path)
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
