@@ -9,7 +9,7 @@ import io
 from PIL import Image
 
 face_cascade_path = cv2.data.haarcascades+"haarcascade_frontalface_default.xml"
-dataset_path =  r"D:\\projects1\\face_attendance_system\datasets\\vishwa"
+dataset_path =  r"copy the datasets path"
 excel_path = r"D:\\projects1\\face_attendance_system\\attendance.xlsx"
 
 face_cascade = cv2.CascadeClassifier(face_cascade_path)
